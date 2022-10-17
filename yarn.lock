@@ -214,7 +214,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.18.9", "@babel/runtime@^7.9.2":
   version "7.19.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.4.tgz#a42f814502ee467d55b38dd1c256f53a7b885c78"
   integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
@@ -404,12 +404,27 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
+"@reduxjs/toolkit@^1.8.6":
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/@reduxjs/toolkit/-/toolkit-1.8.6.tgz#147fb7957befcdb75bc9c1230db63628e30e4332"
+  integrity sha512-4Ia/Loc6WLmdSOzi7k5ff7dLK8CgG2b8aqpLsCAJhazAzGdp//YBUSaj0ceW6a3kDBDNRrq5CRwyCS0wBiL1ig==
+  dependencies:
+    immer "^9.0.7"
+    redux "^4.1.2"
+    redux-thunk "^2.4.1"
+    reselect "^4.1.5"
+
 "@remix-run/router@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.2.tgz#1c17eadb2fa77f80a796ad5ea9bf108e6993ef06"
   integrity sha512-GRSOFhJzjGN+d4sKHTMSvNeUPoZiDHWmRnXfzaxrqe7dE/Nzlc8BiMSJdLDESZlndM7jIUrZ/F4yWqVYlI0rwQ==
 
-"@types/hoist-non-react-statics@*":
+"@socket.io/component-emitter@~3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
+  integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
+
+"@types/hoist-non-react-statics@*", "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
   integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
@@ -476,6 +491,11 @@
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
     csstype "^3.0.2"
+
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
+  integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
 
 "@typescript-eslint/eslint-plugin@^5.40.0":
   version "5.40.0"
@@ -911,7 +931,7 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4, debug@~4.3.1, debug@~4.3.2:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -984,6 +1004,22 @@ emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
+
+engine.io-client@~6.2.3:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/engine.io-client/-/engine.io-client-6.2.3.tgz#a8cbdab003162529db85e9de31575097f6d29458"
+  integrity sha512-aXPtgF1JS3RuuKcpSrBtimSjYvrbhKW9froICH4s0F3XQWLxsKNxqzG39nnvQZQnva4CMvUK63T7shevxRyYHw==
+  dependencies:
+    "@socket.io/component-emitter" "~3.1.0"
+    debug "~4.3.1"
+    engine.io-parser "~5.0.3"
+    ws "~8.2.3"
+    xmlhttprequest-ssl "~2.0.0"
+
+engine.io-parser@~5.0.3:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/engine.io-parser/-/engine.io-parser-5.0.4.tgz#0b13f704fa9271b3ec4f33112410d8f3f41d0fc0"
+  integrity sha512-+nVFp+5z1E3HcToEnO7ZIj3g+3k9389DvWtvJZz0T6/eOCPIyyxehFcedoYrZQrp0LgQbD9pPXhpMBKMd5QURg==
 
 enhanced-resolve@^5.10.0:
   version "5.10.0"
@@ -1703,7 +1739,7 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
+hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
@@ -1731,6 +1767,11 @@ ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
+
+immer@^9.0.7:
+  version "9.0.15"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.15.tgz#0b9169e5b1d22137aba7d43f8a81a495dd1b62dc"
+  integrity sha512-2eB/sswms9AEUSkOm4SbV5Y7Vmt/bKRwByd52jfLkW4OLYeaTP3EEiJ9agqU0O/tq6Dk62Zfj+TJSqfm1rLVGQ==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -2474,6 +2515,23 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-is@^18.0.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
+  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-redux@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-8.0.4.tgz#80c31dffa8af9526967c4267022ae1525ff0e36a"
+  integrity sha512-yMfQ7mX6bWuicz2fids6cR1YT59VTuT8MKyyE310wJQlINKENCeT1UcPdEiX6znI5tF8zXyJ/VYvDgeGuaaNwQ==
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    hoist-non-react-statics "^3.3.2"
+    react-is "^18.0.0"
+    use-sync-external-store "^1.0.0"
+
 react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
@@ -2538,6 +2596,18 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
+redux-thunk@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.4.1.tgz#0dd8042cf47868f4b29699941de03c9301a75714"
+  integrity sha512-OOYGNY5Jy2TWvTL1KgAlVy6dcx3siPJ1wTq741EPyUKfn6W6nChdICjZwCd0p8AZBs5kWpZlbkXW2nE/zjUa+Q==
+
+redux@^4.1.2:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.0.tgz#46f10d6e29b6666df758780437651eeb2b969f13"
+  integrity sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+
 regenerator-runtime@^0.13.4:
   version "0.13.10"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz#ed07b19616bcbec5da6274ebc75ae95634bfc2ee"
@@ -2561,6 +2631,11 @@ require-from-string@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
   integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
+
+reselect@^4.1.5:
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.1.6.tgz#19ca2d3d0b35373a74dc1c98692cdaffb6602656"
+  integrity sha512-ZovIuXqto7elwnxyXbBtCPo9YFEr3uJqj2rRbcOOog1bmu2Ag85M4hixSwFWyaBMKXNgvPaJ9OSu9SkBPIeJHQ==
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -2698,6 +2773,24 @@ slice-ansi@^4.0.0:
     ansi-styles "^4.0.0"
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
+
+socket.io-client@^4.5.3:
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-4.5.3.tgz#bed69209d001465b2fea650d2e95c1e82768ab5e"
+  integrity sha512-I/hqDYpQ6JKwtJOf5ikM+Qz+YujZPMEl6qBLhxiP0nX+TfXKhW4KZZG8lamrD6Y5ngjmYHreESVasVCgi5Kl3A==
+  dependencies:
+    "@socket.io/component-emitter" "~3.1.0"
+    debug "~4.3.2"
+    engine.io-client "~6.2.3"
+    socket.io-parser "~4.2.0"
+
+socket.io-parser@~4.2.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-4.2.1.tgz#01c96efa11ded938dcb21cbe590c26af5eff65e5"
+  integrity sha512-V4GrkLy+HeF1F/en3SpUaM+7XxYXpuMUWLGde1kSSh5nQMN4hLrbPIkD+otwh6q9R6NOQBN4AMaOZ2zVjui82g==
+  dependencies:
+    "@socket.io/component-emitter" "~3.1.0"
+    debug "~4.3.1"
 
 source-map-js@^1.0.2:
   version "1.0.2"
@@ -3103,6 +3196,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+use-sync-external-store@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
+
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -3185,6 +3283,16 @@ write-file-atomic@^4.0.2:
   dependencies:
     imurmurhash "^0.1.4"
     signal-exit "^3.0.7"
+
+ws@~8.2.3:
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-8.2.3.tgz#63a56456db1b04367d0b721a0b80cae6d8becbba"
+  integrity sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==
+
+xmlhttprequest-ssl@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-2.0.0.tgz#91360c86b914e67f44dce769180027c0da618c67"
+  integrity sha512-QKxVRxiRACQcVuQEYFsI1hhkrMlrXHPegbbd1yn9UHOmRxY+si12nQYzri3vbzt8VdTTRviqcKxcyllFas5z2A==
 
 yallist@^4.0.0:
   version "4.0.0"

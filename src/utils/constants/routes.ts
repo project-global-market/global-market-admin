@@ -1,3 +1,5 @@
 export enum E_Routes {
-  home = 'home',
+  start = '/',
+  home = '/home',
+  tickets = '/tickets',
 }
